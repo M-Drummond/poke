@@ -1,0 +1,18 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'PokemonGB';
+  src:
+    local('PokemonGB'),
+    url('/PokemonGB.woff') format('woff');
+}
+
+.screen {
+  @apply border-4 border-double border-black mx-auto pt-4 max-w-[280px];
+  font-family: 'PokemonGB';
+  min-height: 240px;
+  font-size: 14px;
+}
